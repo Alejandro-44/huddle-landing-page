@@ -1,0 +1,59 @@
+/* VARIABLES */
+:root {
+  /* fonts */
+  --font-headings:'Poppins', sans-serif;
+  --font-body: 'Open Sans', sans-serif;
+
+  /* colors */
+  --pink: hsl(322, 100%, 66%);
+  --pale-cyan: hsl(193, 100%, 96%);
+  --dark-cyan: hsl(192, 100%, 9%);
+  --grayish-blue: hsl(208, 11%, 55%);
+
+  /* weights */
+  --w-headings: 700;
+  --w-semi: 600;
+  --w-body: 400;
+}
+
+/* LAYOUT */
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 18px;
+}
+body {
+  font-family: var(--font-body);
+  margin: 0;
+}
+h1, h2 {
+  font-family: var(--font-headings);
+  font-weight: var(--w-headings);
+  color: var(--dark-cyan);
+}
+a {
+  text-decoration: none;
+}
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+li {
+  list-style: none;
+}
+.button {
+  background-color: var(--pink);
+  border: none;
+  color: #fff;
+  font-family: var(--font-body);
+  font-weight: var(--w-semi);
+  font-size: 1rem;
+}
+
+
+
+.hero__img {
+  width: 100%;
+}
