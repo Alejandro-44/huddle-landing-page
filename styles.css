@@ -21,7 +21,7 @@
   box-sizing: border-box;
 }
 html {
-  font-size: 18px;
+  font-size: 15px;
 }
 body {
   font-family: var(--font-body);
@@ -55,7 +55,21 @@ li {
   font-size: 1rem;
 }
 
+/* HEADER */
+.header {
+  display: flex;
+  height: 85px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+}
+.header__img {
+  width: 135px;
+}
+.header__button {
+  height: 2rem;
 
+}
 
 .hero__img {
   width: 100%;
