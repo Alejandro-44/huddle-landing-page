@@ -122,3 +122,39 @@ li {
 .hero__img {
   width: 100%;
 }
+/* CARDS */
+
+.card-container {
+  padding-top: 60px;  
+}
+.card {
+  width: calc( 100% - 40px);
+  margin: 0 auto;
+  padding: 50px 2rem;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(135, 135, 135, .25);
+  margin-bottom: 2.3rem;
+}
+.card__title {
+  text-align: center;
+  font-size: 20px;
+}
+.card__description {
+  text-align: center;
+  font-size: 14px;
+  color: var(--grayish-blue);
+}
+.card__img {
+  width: 100%;
+}
+.start {
+  width: calc(100% - 30px);
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(135, 135, 135, .25);
+  margin: auto;
+}
+/* FOOTER */
+.footer {
+  background-color: var(--dark-cyan);
+  color: #fff;
+}
