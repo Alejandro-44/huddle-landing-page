@@ -176,5 +176,41 @@ li {
 .footer {
   background-color: var(--dark-cyan);
   color: #fff;
+  font-size: 12px;
   padding-top: 3rem;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.footer__logo {
+  width: 35%;
+}
+.contact {
+  margin-top: 10px;
+}
+.contact__list img {
+  display: inline-block;
+  width: 10px;
+  margin-right: 10px;
+}
+.footer__nav {
+  margin-top: 20px;
+}
+.social {
+  display: flex;
+  justify-content: center;
+}
+.social__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  margin-right: 10px;
+  font-size: 18px;
+  line-height: 0;
+}
+.copyright {
+  text-align: center;
 }
