@@ -45,16 +45,15 @@ li {
   list-style: none;
 }
 .button {
-  height: 40px;
   background-color: var(--pink);
-  padding: 0 3.5rem;
+  padding: 10px 3.5rem;
   border: none;
   border-radius: 24px;
   outline: none;
   color: #fff;
   font-family: var(--font-body);
   font-weight: var(--w-semi);
-  font-size: 12px;
+  font-size: 15px;
 }
 
 /* HEADER */
@@ -84,9 +83,8 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 25px;
-  padding: 0 22px;
-  border-radius: 12.5px;
+  padding: 5px 22px;
+  border-radius: 12px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
   background-color: #fff;
 }
@@ -108,13 +106,13 @@ li {
 }
 .hero__title {
   text-align: center;
-  font-size: 24px;
+  font-size: 27px;
   letter-spacing: -1%;
   line-height: 1.5;
 }
 .hero__subtitle {
   text-align: center;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.5;
 
 }
@@ -213,4 +211,12 @@ li {
 }
 .copyright {
   text-align: center;
+}
+.attribution { 
+  font-size: 11px; 
+  text-align: center; 
+  margin: 0;
+}
+.attribution a { 
+  color: hsl(228, 45%, 44%); 
 }
