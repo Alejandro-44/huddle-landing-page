@@ -65,7 +65,7 @@ li {
   background-color: #EDFCFF;
   padding-bottom: 2rem;
 }
-.nav {
+.header__buttons {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -73,14 +73,14 @@ li {
   width: calc(100% - 30px);
   margin: auto;
 }
-.nav__logo {
+.header__logo {
   width: 35%;
   line-height: 0;
 }
-.nav__img {
+.header__img {
   width: 100%;
 }
-.nav__button {
+.header__button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -90,7 +90,7 @@ li {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
   background-color: #fff;
 }
-.nav__button a {
+.header__button a {
   font-size: 10px;
   color: var(--dark-cyan);
   font-weight: 700;
