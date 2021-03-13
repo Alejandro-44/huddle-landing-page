@@ -70,6 +70,7 @@ li {
   align-items: center;
   height: 94px;
   width: calc(100% - 30px);
+  max-width: 1285px;
   margin: auto;
 }
 .header__logo {
@@ -99,6 +100,7 @@ li {
   flex-direction: column;
   align-items: center;
   width: calc(100% - 4rem);
+  max-width: 1285px;
   margin: auto;
 }
 .hero-container {
@@ -125,7 +127,7 @@ li {
 }
 /* CARDS */
 
-.card-container {
+.cards-container {
   padding-top: 60px;
   margin-bottom: 100px;  
 }
@@ -133,7 +135,8 @@ li {
   display: flex;
   flex-direction: column;
   width: calc( 100% - 40px);
-  margin: 0 auto;
+  max-width: 1230px;
+  margin: auto;
   padding: 50px 2rem;
   border-radius: 15px;
   box-shadow: 0 0 10px rgba(135, 135, 135, .25);
@@ -161,9 +164,10 @@ li {
   flex-direction: column;
   align-items: center;
   width: calc(100% - 24px);
+  max-width: 475px;
   padding: 45px 20px;
   margin: auto;
-  margin-bottom: -20%;
+  margin-bottom: -75px;
   border-radius: 15px;
   box-shadow: 0 0 10px rgba(135, 135, 135, .25);
   background-color: #fff;
@@ -235,4 +239,22 @@ li {
 }
 .attribution a { 
   color: hsl(228, 45%, 44%); 
+}
+
+/* Media Queries */
+
+@media only screen and (min-width:426px) {
+  .card {
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  .card:nth-child(2) {
+    flex-direction: row;
+  }
+  .card-container {
+    margin: 10px;
+  }
+  .card__img {
+    width: 50%;
+  }
 }
