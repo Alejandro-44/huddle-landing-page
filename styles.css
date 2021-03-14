@@ -49,7 +49,8 @@ img {
 }
 .button {
   background-color: var(--pink);
-  padding: 10px 3.5rem;
+  min-width: 276px;
+  padding: 10px 3rem;
   border: none;
   border-radius: 24px;
   outline: none;
@@ -81,26 +82,18 @@ img {
   max-width: 200px;
   line-height: 0;
 }
-.header__img {
-  width: 100%;
-}
+
 .header__button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: inline-block;
   padding: 5px 22px;
   border-radius: 12px;
+  font-size: 10px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
   background-color: #fff;
-}
-.header__button a {
-  font-size: 10px;
   color: var(--dark-cyan);
   font-weight: 700;
 }
-.img-container {
-  margin: 0;
-}
+
 /* HERO */
 .hero {
   display: flex;
@@ -127,6 +120,9 @@ img {
   font-size: 18px;
   line-height: 1.5;
   margin-bottom: 2rem;
+}
+.hero__img {
+  margin: 0;
 }
 /* CARDS */
 
@@ -167,7 +163,7 @@ img {
   flex-direction: column;
   align-items: center;
   width: calc(100% - 24px);
-  max-width: 475px;
+  max-width: 800px;
   padding: 45px 20px;
   margin: auto;
   margin-bottom: -75px;
@@ -248,22 +244,28 @@ img {
 /* Media Queries */
 
 @media only screen and (min-width:426px) {
-  .img-container {
-    width: 175%;
-  }
 
   .header {
     background-image: url('./images/bg-hero-desktop.svg');
   }
   .header__buttons {
-    margin-bottom: 2rem;
+    height: 122px;
+  }
+  .header__button {
+    padding: 10px 44px;
+    font-size: 12px;
+    border-radius: 24px;
   }
   .hero {
     flex-direction: row;
+    justify-content: space-between;
+  }
+  .hero__img {
+    width: 40%;
   }
   .hero-container {
     align-items: flex-start;
-    margin-right: 2rem;
+    width: 40%;
   }
   .hero__title {
     text-align: left;
@@ -286,14 +288,26 @@ img {
   .card__img {
     width: 35%;
   }
-  .card__title {
-    text-align: left;
-  }
-  .card__description {
+  .card__title, .card__description {
     text-align: left;
   }
 }
 @media only screen and (min-width:1025px) {
+
+  .header__buttons {
+    height: 150px;
+  }
+  .header__button {
+    padding: 14px 64px;
+    font-size: 15px;
+    border-radius: 24px;
+  }
+  .hero__img {
+    width: 60%;
+  }
+  .hero-container {
+    width: 30%;
+  }
   .card {
     padding-left: 120px;
   }
