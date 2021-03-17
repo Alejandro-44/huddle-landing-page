@@ -278,6 +278,9 @@ img {
   .hero__title, .hero__subtitle {
     text-align: left;
   }
+  .cards-container {
+    padding-top: 6rem;  
+  }
   .card {
     display: flex;
     flex-direction: row-reverse;
